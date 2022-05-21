@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html body {
+  min-height: none;
+}
+
+body {
+  background: rgb(252, 193, 225);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 3rem;
+}
+
+section {
+  background: rgb(255, 247, 220);
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 6px rgba(154, 115, 218, 0.726);
+  height: 40vh;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

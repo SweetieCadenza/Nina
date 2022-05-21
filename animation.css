@@ -1,0 +1,73 @@
+.animation-1 {
+   width: 100%; 
+   height: 3rem;
+   border-radius: 0.5rem;
+   background: linear-gradient(to right, rgb(250, 217, 235), rgb(241, 147, 186), rgb(245, 95, 140));
+   animation-name: my-animation-1;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+@keyframes my-animation-1 {
+    from {
+        filter: hue-rotate(0deg) blur(0.2rem);
+    }
+
+    to {
+        filter: hue-rotate(360deg) blur(0.2rem);
+    }
+}
+
+.animation-2 {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 0.5rem solid transparent;
+    border-top-color: violet;
+
+    animation-name: my-animation-2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+
+    
+}
+
+@keyframes my-animation-2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.animation-3 {
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(to left, rgb(105, 0, 243), rgb(230, 0, 238), rgb(255, 0, 64));
+    border-radius: 60%;
+    border: 1rem solid transparent;
+
+    animation-name: my-animation-3;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes my-animation-3 {
+    from {
+        transform: rotate(0deg);
+        border-radius: 50%;
+        filter: blur(6rem);
+    }
+
+    to {
+        transform: rotate(359deg);
+        border-radius: 0%;
+        filter: blur(0rem);
+    }
+}
+
